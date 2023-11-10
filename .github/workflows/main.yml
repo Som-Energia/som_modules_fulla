@@ -82,6 +82,7 @@ jobs:
           git clone --depth 1 https://github.com/gisce/mongodb_backend.git -b gisce $ROOT_DIR_SRC/mongodb_backend
           git clone --depth 1 https://github.com/gisce/poweremail-modules.git $ROOT_DIR_SRC/poweremail-modules
           git clone --depth 1 https://github.com/gisce/crm_poweremail.git $ROOT_DIR_SRC/crm_poweremail
+          git clone --depth 1 https://github.com/gisce/aeroo.git $ROOT_DIR_SRC/aeroo_modules
           git clone --depth 1 https://$GITHUB_TOKEN@github.com/Som-Energia/libFacturacioATR.git $ROOT_DIR_SRC/libFacturacioATR
           git clone --depth 1 https://github.com/gisce/ooop.git $ROOT_DIR_SRC/ooop
           git clone --depth 1 https://github.com/Som-Energia/giscedata_facturacio_indexada_som.git $ROOT_DIR_SRC/giscedata_facturacio_indexada_som
