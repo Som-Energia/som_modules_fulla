@@ -85,6 +85,7 @@ jobs:
           git clone --depth 1 https://$GITHUB_TOKEN@github.com/Som-Energia/libFacturacioATR.git $ROOT_DIR_SRC/libFacturacioATR
           git clone --depth 1 https://github.com/gisce/ooop.git $ROOT_DIR_SRC/ooop
           git clone --depth 1 https://github.com/Som-Energia/giscedata_facturacio_indexada_som.git $ROOT_DIR_SRC/giscedata_facturacio_indexada_som
+          git clone --depth 1 https://github.com/Som-Energia/erp-empowering.git $ROOT_DIR_SRC/erp-empowering
       - name: Install dependencies
         run: |
           sudo apt-get --allow-releaseinfo-change update
