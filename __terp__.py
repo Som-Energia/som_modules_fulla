@@ -44,7 +44,6 @@
       'base_setup',
       'giscedata_dfestius',
       'som_remeses_base',
-      'report_aeroo',
       'som_documents_sensibles',
       'uiqmako_helpers',
       'giscedata_facturacio_iva_10',
