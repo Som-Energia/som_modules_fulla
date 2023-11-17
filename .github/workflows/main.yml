@@ -109,6 +109,7 @@ jobs:
           cd $ROOT_DIR_SRC
           pip install -r $ROOT_DIR_SRC/erp/requirements-dev.txt
           pip install -r $ROOT_DIR_SRC/erp/requirements.txt
+          pip install MarkupSafe==1.1.1
       - name: Link Addons
         run: |
           export ROOT_DIR_SRC=${{github.workspace}}/..
