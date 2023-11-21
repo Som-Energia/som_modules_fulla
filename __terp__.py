@@ -6,6 +6,7 @@
   "author": "Som Energia",
   "category": "Master",
   "depends": [
+      'giscedata_facturacio_iva_10_som',
       'ir_attachment_mongodb',
       'sentry',
       'ws_transactions',
@@ -44,7 +45,6 @@
       'som_remeses_base',
       'som_documents_sensibles',
       'uiqmako_helpers',
-      'giscedata_facturacio_iva_10',
       'poweremail_campaign',
       'giscedata_facturacio_refund_signed',
       'giscedata_facturacio_som',
