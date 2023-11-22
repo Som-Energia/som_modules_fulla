@@ -1,0 +1,29 @@
+version: "3.3"
+
+services:
+  erp:
+    build:
+      context: .
+      dockerfile: Dockerfile-som
+    ports:
+      - 8069:8069
+      - 8068:8068   
+
+  postgres:
+    image: timescale/timescaledb:latest-pg12
+    ports:
+      - 5432:5432
+    environment:
+     - POSTGRES_USER=erp
+     - POSTGRES_PASSWORD=erp
+
+  mongo:
+    image: mongo:3.0
+    ports: 
+      - 27017:27017
+
+  redis:
+    image: redis:5.0
+    ports:
+      - 6379:6379
+
