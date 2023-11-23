@@ -134,5 +134,7 @@ RUN git clone https://github.com/gisce/ws_transactions.git
 WORKDIR /
 EXPOSE 8069 22
 
+RUN apt-get install libmagic1 -y
+
 ENTRYPOINT [ "/entrypoint.sh" ]
 
