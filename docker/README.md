@@ -17,3 +17,4 @@ TODO
 ## Com el fem servir en local
 TODO: docker-compose que agafar imatges de Harbour
 
+
