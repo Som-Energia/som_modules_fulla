@@ -130,6 +130,7 @@ RUN chmod 700 /entrypoint.sh
 
 WORKDIR /src 
 RUN git clone https://github.com/Som-Energia/som_modules_fulla.git
+RUN git clone https://github.com/gisce/ws_transactions.git
 WORKDIR /
 EXPOSE 8069 22
 
