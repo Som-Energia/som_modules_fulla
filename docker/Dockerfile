@@ -39,6 +39,7 @@ RUN git clone --depth 1 https://github.com/gisce/ir_attachment_mongodb.git
 RUN git clone --depth 1 https://github.com/gisce/crm_poweremail.git
 RUN git clone --depth 1 https://github.com/gisce/viafirma.git
 RUN git clone --depth 1 https://github.com/gisce/tipoinstalacion.git
+RUN git clone https://github.com/gisce/ws_transactions.git
 
 # Som Energia public clones
 RUN git clone --depth 1 https://github.com/Som-Energia/erppeek_wst.git -b ws_transaction
@@ -54,6 +55,7 @@ RUN git clone --depth 1 https://github.com/Som-Energia/plantmeter.git -b plantme
 RUN git clone --depth 1 https://github.com/totaler/facturae.git
 RUN git clone https://github.com/Som-Energia/openerp_som_addons.git
 RUN git clone https://github.com/Som-Energia/somenergia-generationkwh.git
+RUN git clone https://github.com/Som-Energia/som_modules_fulla.git
 
 FROM python:2.7-slim
 
@@ -128,9 +130,6 @@ COPY entrypoint.sh /
 RUN chmod 700 /entrypoint.sh
 
 
-WORKDIR /src 
-RUN git clone https://github.com/Som-Energia/som_modules_fulla.git
-WORKDIR /
 EXPOSE 8069 22
 
 ENTRYPOINT [ "/entrypoint.sh" ]
