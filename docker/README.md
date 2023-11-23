@@ -8,6 +8,9 @@
 ### Construim la base de dades amb el destral
 `docker-compose -f docker-compose-fulla-feta.yaml up`
 
+### Guardem contenidor de Postgres a imatge
+`docker container commit -a "SomEnergia" -m "Postgres som_modul_fulla" id_contenidor postgres:developer`
+
 ### Pugem les imatges al Harbour
 TODO
 
