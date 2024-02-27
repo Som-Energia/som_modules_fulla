@@ -1,9 +1,11 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: SOM_ERP
+name: ALL_SOM_ERP
 on:
-  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 concurrency:
   group: ${{ github.ref }}
@@ -66,7 +68,7 @@ jobs:
           pip install --upgrade pip setuptools wheel
       - name: Download required repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GA }}
         run: |
           export ROOT_DIR_SRC=${{github.workspace}}/..
           git clone --depth 1 https://$GITHUB_TOKEN@github.com/Som-Energia/erp.git -b developer $ROOT_DIR_SRC/erp
