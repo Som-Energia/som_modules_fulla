@@ -3,6 +3,7 @@
 
 name: ALL_SOM_ERP
 on:
+  push:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
@@ -135,6 +136,8 @@ jobs:
           export OPENERP_DB_HOST=localhost
           export OPENERP_DB_USER=$POSTGRES_USER
           export OPENERP_DB_PASSWORD=$POSTGRES_PASSWORD
+          export OPENERP_SECRET="abc1234"
+          export OPENERP_SII_TEST_MODE=1
           cd ${{github.workspace}}
           destral -m som_modules_fulla --report-coverage --enable-coverage --report-junitxml ${{github.workspace}}/test-results/destral
       - name: Publish Unit Test Results
