@@ -8,7 +8,6 @@
   "depends": [
       'giscedata_facturacio_iva_10_som',
       'ir_attachment_mongodb',
-      'sentry',
       'ws_transactions',
       'res_comarca_canaries',
       'giscedata_switching_cnmc_reports',
