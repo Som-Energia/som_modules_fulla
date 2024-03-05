@@ -99,7 +99,6 @@
       'giscedata_tarifas_peajes_20100701',
       'giscedata_cnmc_ivc',
       'som_l10n_ES_aeat_mod347',
-      'spawn_oop',
       'giscedata_facturacio_devolucions',
       'som_informe',
       'giscedata_tarifas_peajes_20210601',
