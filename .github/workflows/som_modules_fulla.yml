@@ -1,6 +1,6 @@
 # This workflow will pass tests of module passed by input
 
-name: som_plantmeter
+name: som_modules_fulla
 on:
   workflow_dispatch:
   pull_request: # PR
